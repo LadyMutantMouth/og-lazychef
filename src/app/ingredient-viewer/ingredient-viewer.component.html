@@ -1,0 +1,42 @@
+ 
+<form #ing="ngForm">
+  <div class="row">
+    <div class="col-md-4 form-group">
+      <label for="ingName">Ing. Name</label>
+      <input 
+        type="text" 
+        class="input-sm form-control"
+        [(ngModel)]="ingName"
+        id="ingName"
+        name="ingName">
+    </div>
+    <div class="col-md-4 form-group">
+      <label for="amount">Amount</label>
+      <input 
+        type="text" 
+        class="input-sm form-control" 
+        id="amount"
+        [(ngModel)]="amount"
+        name="amount">
+    </div>
+    <div class="col-md-4">
+      <br>
+      <button class="btn btn-block btn-sm btn-secondary" style="margin-top:4px;" (click)="addMore(ing)">
+        <span class="fa fa-plus"></span>
+      </button>
+  </div>
+  </div>
+</form>
+
+
+<table class="table">
+    <tbody>
+      <tr *ngFor="let ingredient of ingArray, let i = index">
+        <td>{{ ingredient.ingName }}</td>
+        <td>{{ ingredient.amount }}</td>
+        <td>
+          <span class="fa fa-trash fa-2x pull-right" (click)="removeIngredient(ingredient, i)"></span>
+        </td>
+      </tr>
+    </tbody>
+  </table>

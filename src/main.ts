@@ -1,3 +1,4 @@
+import { LcHeaderComponent } from './app/lc-header/lc-header.component';
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 

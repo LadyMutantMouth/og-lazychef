@@ -1,0 +1,20 @@
+<table class="table table-responsive">
+  <thead>
+    <td></td>
+    <td></td>
+  </thead>
+  <tbody>
+    <tr *ngFor="let chef of featuredUsers">
+      <td>
+        <span class="fa fa-user"></span>
+      </td>
+      <td>
+        {{ chef.username }}
+        <br>
+        Recipes Created: {{ chef.recipesCreated }}
+        <br>
+        Last Online: {{ chef.lastOnline }}
+      </td>
+    </tr>
+  </tbody>
+</table>

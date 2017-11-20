@@ -1,0 +1,182 @@
+<div class="container border">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 style="text-align: center">Create A Recipe</h1>
+      <hr>
+      <div class="row">
+        <div class="col-md-6 form-border">
+          <!-- Creating the Recipe -->
+          <h2><u>Recipe Form</u></h2>
+          <br>
+          <form #f="ngForm" (ngSubmit)="createRecipe(newRecipe)">
+            <!-- Recipe Name -->
+            <div class="row form-group">
+              <div class="col-md-3">
+                <label for="recipeName">Recipe Name</label>
+              </div>
+              <div class="col-md-9">
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="recipeName"
+                  [(ngModel)]="recipeName"
+                  name="recipeName">
+              </div>
+            </div>
+            <hr>
+            <!-- Author of the Recipe -->
+            <div class="row form-group">
+              <div class="col-md-3">
+                <label for="authorName">Author Name</label>
+              </div>
+              <div class="col-md-9">
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="authorName"
+                  [(ngModel)]="authorName"
+                  name="authorName"
+                  >
+              </div>
+            </div>
+            <hr>
+            <!-- About the Recipe -->
+            <div class="row form-group">
+              <div class="col-md-3">
+                <label for="aboutRecipe">About Recipe</label>
+              </div>
+              <div class="col-md-9">
+                <textarea 
+                  type="text" 
+                  class="form-control" 
+                  id="aboutRecipe"
+                  [(ngModel)]="aboutRecipe"
+                  name="aboutRecipe">
+                </textarea>
+              </div>
+            </div>
+            <hr>
+            <!-- Where to add the main image -->
+            <div class="row form-group">
+              <div class="col-md-3">
+                <br>
+                <label for="mainImage">Main Image</label>
+              </div>
+              <div class="col-md-9">
+                <!-- Image Upload Component -->
+                <image-upload></image-upload>
+              </div>
+            </div>
+            <hr>
+            <div class="row form-group">
+              <div class="col-md-3">
+                <br>
+                <label for="">Ingredients</label>
+              </div>
+              <div class="col-md-9">
+                <!-- Ingredient Table Component -->
+                <ingredient-viewer></ingredient-viewer>
+              </div>
+            </div>
+            <hr>
+            <!-- Getting Prep Step -->
+            <div class="row">
+              <div class="col-md-3">
+                <label for="prepStep">Prep Step</label>
+                <p class="muted">
+                    Use this field to list any steps that should be carried out before cooking, e.g. preheat the oven, wash and dry produce...
+                  </p>
+              </div>
+              <div class="col-md-9">
+                <textarea 
+                  class="form-control" 
+                  name="prepStep"
+                  [(ngModel)]="prepStep" 
+                  id="prepStep" 
+                  cols="30" 
+                  rows="5"></textarea>
+              </div>
+            </div>
+            <hr>
+            <!-- Adding all the steps, timers -->
+            <div class="row form-group">
+              <div class="col-md-3">
+                <br>
+                <br>
+                <label for="methodSteps">Steps</label>
+              </div>
+              <div class="col-md-9">
+                <!-- Should be vertical tabs that auto-populate when new is added -->
+                <textarea class="form-control" name="" id="methodSteps" cols="30" rows="5"></textarea>
+                <div class="row">
+                  <div class="col-md-1">
+                    <input class="pull-left" type="checkbox">
+                  </div>
+                  <div class="col-md-8">
+                    <p class="muted">
+                      Does this step have a timer?
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                      <input type="text" name="" id="" class="form-control" style="display:none;">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-1">
+                      <input class="pull-left" type="checkbox">
+                    </div>
+                    <div class="col-md-8">
+                        <p class="muted">
+                            Does this step have an image?
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                      <!-- add mini img uploader here -->
+                    </div>
+                  </div>
+                <br>
+                <div class="col-md-6">
+                    <button class="btn btn-info form-control">Save & Add More</button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-info form-control">Finish</button>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <br>
+          </form>
+        </div>
+        <!-- Previewing the Recipe -->
+        <div class="col-md-6 form-border">
+          <recipe-preview 
+          [recipePreview]="newRecipe"
+          [newRecipe]="RecipePreview"
+          >
+        </recipe-preview>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-4">
+              <button class="btn btn-danger btn-block">
+                Clear Recipe
+              </button>
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-success btn-block" (click)="createRecipe(f)">
+                Create Recipe
+              </button>
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-default btn-block">
+                Save for Later
+              </button>
+            </div>
+            <br>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

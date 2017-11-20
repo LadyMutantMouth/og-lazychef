@@ -1,0 +1,67 @@
+<h2><u>Recipe Preview</u></h2>
+<div class="row">
+  <div class="col-md-12">
+    <h2> {{ recipeName || "Recipe Name" }} </h2>
+    <hr>
+    <a href="" class="muted">{{ authorName || "Author Name" }}</a>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-6">
+    <p class="muted">
+        {{ about || "about recipe" }}
+    </p>
+  </div>
+  <div class="col-md-6">
+    IMAGE
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-md-12">
+    <label for="">
+      Ingredients
+    </label>
+    <div class="col-md-10 col-md-offset-1">
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>Dijon Mustard</td>
+            <td>1 tsp</td>
+          </tr>
+          <tr>
+            <td>Pork Tenderloin</td>
+            <td>2 lb</td>
+          </tr>
+          <tr>
+            <td>Honey</td>
+            <td>2 tbsp</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-md-12">
+    <label for="">
+      Prep Step
+    </label>
+    <p class="muted">
+      This is the prep step. Not sure what's going here yet, but should make some sense?
+    </p>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-md-12">
+    <label for="">
+      Steps
+    </label>
+    <div class="row">
+      <step-viewer></step-viewer>
+    </div>
+  </div>
+</div>

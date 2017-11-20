@@ -1,0 +1,249 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "author_id": 1,
+            "recipeName": "Honey Mustard Pork",
+            "author": "Gemma Dominey",
+            "description": "honey mustard pork is yummy",
+            "created_at": "10/19/2017",
+            "updated_at": "10/19/2017",
+            "mainImage": "https://homechef.imgix.net/https%3A%2F%2Fasset.homechef.com%2Fuploads%2Fmeal%2Fplated%2F3485%2Fhomechef_3485-_Honey_Mustard-Roasted_Pork_Tenderloin__1_of_1_-611dd27ab12f6975108d5e8319e63297-611dd27ab12f6975108d5e8319e63297.jpg?ixlib=rails-1.1.0&w=850&s=2e11ed0f9e6393a697fec4d4af157230",
+            "rating": 3,
+            "ingredients": [
+                {
+                    "id": 1,
+                    "qty": "1 tsp",
+                    "ingName": "dijon mustard"
+                }, 
+                {
+                    "id": 2,
+                    "qty": "1 lb",
+                    "ingName": "pork tenderloin"
+                },
+                {
+                    "id": 3,
+                    "qty": "2 tbp",
+                    "ingName": "honey"
+                }
+            ],
+            "prepStep": "preheat the oven, wash and dry vegetables",
+            "cookSteps": [
+                {
+                    "id": 1,
+                    "instruction": "sear the pork",
+                    "timer": false,
+                    "time": ""
+                },
+                {
+                    "id": 2,
+                    "instruction": "make the sauce",
+                    "timer": true,
+                    "time": "2 minutes"
+                },
+                {
+                    "id": 3,
+                    "instruction": "cook the pork",
+                    "timer": true,
+                    "time": "20 minutes"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "author_id": 2,
+            "recipeName": "Bangers & Mash",
+            "author": "Matt Dominey",
+            "description": "bangers and mash are yummy",
+            "created_at": "10/19/2017",
+            "updated_at": "10/19/2017",
+            "mainImage": "https://homechef.imgix.net/https%3A%2F%2Fasset.homechef.com%2Fuploads%2Fmeal%2Fplated%2F3485%2Fhomechef_3485-_Honey_Mustard-Roasted_Pork_Tenderloin__1_of_1_-611dd27ab12f6975108d5e8319e63297-611dd27ab12f6975108d5e8319e63297.jpg?ixlib=rails-1.1.0&w=850&s=2e11ed0f9e6393a697fec4d4af157230",
+            "rating": 2,
+            "ingredients": [
+                {
+                    "id": 1,
+                    "qty": "1 lb",
+                    "ingName": "russett potatoes"
+                }, 
+                {
+                    "id": 2,
+                    "qty": "2 cups",
+                    "ingName": "gravy"
+                },
+                {
+                    
+                    "id": 3,
+                    "qty": "8",
+                    "ingName": "bratwursts"
+                }
+            ],
+            "prepStep": "preheat the oven, wash and dry vegetables",
+            "cookSteps": [
+                {
+                    "id": 1,
+                    "instruction": "cook the sausages",
+                    "timer": true,
+                    "time": "20 minutes"
+                },
+                {
+                    "id": 2,
+                    "instruction": "mash the potatoes",
+                    "timer": true,
+                    "time": "15 minutes"
+                },
+                {
+                    "id": 3,
+                    "instruction": "make the gravy",
+                    "timer": false,
+                    "time": ""
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "author_id": 3,
+            "recipeName": "Mac & Cheese",
+            "author": "Mika Dominey",
+            "description": "mac and cheese is yummy",
+            "created_at": "10/19/2017",
+            "updated_at": "10/19/2017",
+            "mainImage": "https://homechef.imgix.net/https%3A%2F%2Fasset.homechef.com%2Fuploads%2Fmeal%2Fplated%2F3485%2Fhomechef_3485-_Honey_Mustard-Roasted_Pork_Tenderloin__1_of_1_-611dd27ab12f6975108d5e8319e63297-611dd27ab12f6975108d5e8319e63297.jpg?ixlib=rails-1.1.0&w=850&s=2e11ed0f9e6393a697fec4d4af157230",
+            "rating": 1,
+            "ingredients": [
+                {
+                    "id": 1,
+                    "qty": "1 cup",
+                    "ingName": "elbow macaroni"
+                }, 
+                {
+                    "id": 2,
+                    "qty": "2 cups",
+                    "ingName": "cheese sauce"
+                },
+                {
+                    
+                    "id": 3,
+                    "qty": "6 oz",
+                    "ingName": "breadcrumbs"
+                }
+            ],
+            "prepStep": "preheat the oven, wash and dry vegetables",
+            "cookSteps": [
+                {
+                    "id": 1,
+                    "instruction": "cook the pasta",
+                    "timer": true,
+                    "time": "10 minutes"
+                },
+                {
+                    "id": 2,
+                    "instruction": "heat the sauce",
+                    "timer": false,
+                    "time": ""
+                },
+                {
+                    "id": 3,
+                    "instruction": "bake in oven",
+                    "timer": true,
+                    "time": "25 minutes"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "author_id": 3,
+            "recipeName": "Bayou Blend",
+            "author": "Morgan Dominey",
+            "description": "bayou blend is yummy",
+            "created_at": "10/19/2017",
+            "updated_at": "10/19/2017",
+            "mainImage": "https://homechef.imgix.net/https%3A%2F%2Fasset.homechef.com%2Fuploads%2Fmeal%2Fplated%2F3485%2Fhomechef_3485-_Honey_Mustard-Roasted_Pork_Tenderloin__1_of_1_-611dd27ab12f6975108d5e8319e63297-611dd27ab12f6975108d5e8319e63297.jpg?ixlib=rails-1.1.0&w=850&s=2e11ed0f9e6393a697fec4d4af157230",
+            "rating": 3,
+            "ingredients": [
+                {
+                    "id": 1,
+                    "qty": "1 cup",
+                    "ingName": "gator"
+                }, 
+                {
+                    "id": 2,
+                    "qty": "2 cups",
+                    "ingName": "green beans"
+                },
+                {
+                    
+                    "id": 3,
+                    "qty": "3 cups",
+                    "ingName": "pure awesomeness"
+                }
+            ],
+            "prepStep": "preheat the oven, wash and dry vegetables",
+            "cookSteps": [
+                {
+                    "id": 1,
+                    "instruction": "get me some GATOR",
+                    "timer": true,
+                    "time": "10 minutes"
+                },
+                {
+                    "id": 2,
+                    "instruction": "where are my GREEN BEANS",
+                    "timer": false,
+                    "time": ""
+                },
+                {
+                    "id": 3,
+                    "instruction": "ah, happiness is bliss",
+                    "timer": false,
+                    "time": ""
+                }
+            ]
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "username": "gemao_o",
+            "firstName": "Gemma",
+            "lastName": "Dominey",
+            "email": "gemma.l.dominey@gmail.com",
+            "recipesCreated": 400,
+            "lastOnline": "10/19/2017",
+            "recipeBook": ""
+        },
+        {
+            "id": 2,
+            "user_id": 2,
+            "username": "mdomino",
+            "firstName": "Matt",
+            "lastName": "Dominey",
+            "email": "matt.dominey@gmail.com",
+            "recipesCreated": 10,
+            "lastOnline": "10/09/2017",
+            "recipeBook": ""
+        },
+        {
+            "id": 3,
+            "user_id": 3,
+            "username": "lady_mutant_mouth",
+            "firstName": "Mika",
+            "lastName": "Dominey",
+            "email": "mika.dominey@gmail.com",
+            "recipesCreated": 1,
+            "lastOnline": "10/18/2017",
+            "recipeBook": ""
+        },
+        {
+            "id": 4,
+            "user_id": 4,
+            "username": "mr_pants",
+            "firstName": "Morgan",
+            "lastName": "Dominey",
+            "email": "morgan.dominey@gmail.com",
+            "recipesCreated": 0,
+            "lastOnline": "01/19/2017",
+            "recipeBook": ""
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="jumbotron">
+      <h1>LazyChef - the app that cooks you</h1>
+      <div class="row">
+        <div class="col-md-11">
+            <p class="muted">To get started, create a Recipe! 
+                <span class="fa fa-arrow-right"></span>
+                <button class="btn btn-info pull-right" [routerLink]="['/create-recipe']">Create Recipe</button>
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">This is where a fun 867X116 banner can go</div>
+      <div class="panel-body">
+        <h3>{{title}}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <recipe-search></recipe-search>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <h2>Featured Chefs</h2>
+        <featured-chef></featured-chef>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <h2>Featured Recipes</h2>
+        <featured-recipe></featured-recipe>
+      </div>
+    </div>
+  </div>
