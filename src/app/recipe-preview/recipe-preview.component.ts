@@ -10,10 +10,9 @@ import { Component, OnInit, Input, Output, EventEmitter, Directive } from '@angu
   styleUrls: ['./recipe-preview.component.css']
 })
 export class RecipePreviewComponent implements OnInit {
-  @Input() recipePreview: object;
-  @Input('newRecipe') RecipePreview: object;
-
+  @Input() recipe: Recipe;
   constructor() { }
+
 
   ngOnInit() {
   }

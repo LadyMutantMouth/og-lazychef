@@ -19,7 +19,7 @@
                   type="text" 
                   class="form-control" 
                   id="recipeName"
-                  [(ngModel)]="recipeName"
+                  [(ngModel)]="this.recipe.recipeName"
                   name="recipeName">
               </div>
             </div>
@@ -34,7 +34,7 @@
                   type="text" 
                   class="form-control" 
                   id="authorName"
-                  [(ngModel)]="authorName"
+                  [(ngModel)]="this.recipe.authorName"
                   name="authorName"
                   >
               </div>
@@ -50,7 +50,7 @@
                   type="text" 
                   class="form-control" 
                   id="aboutRecipe"
-                  [(ngModel)]="aboutRecipe"
+                  [(ngModel)]="this.recipe.aboutRecipe"
                   name="aboutRecipe">
                 </textarea>
               </div>
@@ -75,7 +75,9 @@
               </div>
               <div class="col-md-9">
                 <!-- Ingredient Table Component -->
-                <ingredient-viewer></ingredient-viewer>
+                <ingredient-viewer 
+                  (readyIngArray)="this.updateIngArray($event)"
+                ></ingredient-viewer>
               </div>
             </div>
             <hr>
@@ -150,10 +152,8 @@
         <!-- Previewing the Recipe -->
         <div class="col-md-6 form-border">
           <recipe-preview 
-          [recipePreview]="newRecipe"
-          [newRecipe]="RecipePreview"
-          >
-        </recipe-preview>
+            [recipe]="this.recipe"
+          ></recipe-preview>
         </div>
       </div>
       <br>

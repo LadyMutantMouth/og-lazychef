@@ -9,7 +9,8 @@ import { FormsModule, ReactiveFormsModule, NgForm } from '@angular/forms';
 })
 export class IngredientViewerComponent {
 
-  @Input() private ingArray: Ingredient[] = [];
+  @Input() public ingArray: Ingredient[] = [];
+  @Output() readyIngArray = new EventEmitter<Ingredient[]>();
 
   constructor() {
     let newIng: Ingredient;
@@ -20,6 +21,7 @@ export class IngredientViewerComponent {
     this.ingArray.push(newIng.value);
     newIng.reset();
     console.log(this.ingArray);
+    this.readyIngArray.emit(this.ingArray);
   }
 
   removeIngredient(ingredient, index) {

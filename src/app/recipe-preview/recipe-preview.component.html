@@ -1,16 +1,16 @@
 <h2><u>Recipe Preview</u></h2>
 <div class="row">
   <div class="col-md-12">
-    <h2> {{ recipeName || "Recipe Name" }} </h2>
+    <h2> {{ this.recipe.recipeName || "Recipe Name" }} </h2>
     <hr>
-    <a href="" class="muted">{{ authorName || "Author Name" }}</a>
+    <a href="" class="muted">{{ this.recipe.authorName || "Author Name" }}</a>
   </div>
 </div>
 <br>
 <div class="row">
   <div class="col-md-6">
     <p class="muted">
-        {{ about || "about recipe" }}
+        {{ this.recipe.aboutRecipe || "about recipe" }}
     </p>
   </div>
   <div class="col-md-6">
@@ -26,18 +26,11 @@
     <div class="col-md-10 col-md-offset-1">
       <table class="table">
         <tbody>
-          <tr>
-            <td>Dijon Mustard</td>
-            <td>1 tsp</td>
+          <tr *ngFor="let ing of this.recipe.ingredients">
+            <td>{{ ing.ingName }}</td>
+            <td>{{ ing.amount }}</td>
           </tr>
-          <tr>
-            <td>Pork Tenderloin</td>
-            <td>2 lb</td>
-          </tr>
-          <tr>
-            <td>Honey</td>
-            <td>2 tbsp</td>
-          </tr>
+          
         </tbody>
       </table>
     </div>

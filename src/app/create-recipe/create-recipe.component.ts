@@ -3,6 +3,7 @@ import { IngredientViewerComponent } from '../ingredient-viewer/ingredient-viewe
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RecipesService, Recipe, Ingredient, CookStep } from '../services/recipes.service'
 import { Component, OnInit, Input, Output, EventEmitter, Directive } from '@angular/core';
+import { NewRecipe } from '../new-recipe';
 
 @Component({
   selector: 'create-recipe',
@@ -10,23 +11,20 @@ import { Component, OnInit, Input, Output, EventEmitter, Directive } from '@angu
   styleUrls: ['./create-recipe.component.css']
 })
 export class CreateRecipeComponent {
-  @Input() private ingArray: any[] = [];
-  
-  //private recipe: Recipe;
+  recipe: Recipe = new NewRecipe;
 
   private cookArray: CookStep[];
 
   
   constructor() {
-   let newRecipe: Recipe;
-   }
-  
+  }
+
+  updateIngArray(dayta) {
+    this.recipe.ingredients = dayta;
+  }
 
   createRecipe(newRecipe) {
     console.log(newRecipe.value);
-    //this.readyIngredientArray.emit(this.ingArray);
-    console.log(this.ingArray);
-
   }
 
 }
